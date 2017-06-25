@@ -1,0 +1,32 @@
+{
+  "name": "bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "gulp test",
+    "start": "npm install && gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/manikandants/bot.git"
+  },
+  "author": "Manikandan TS <manikandan.citeee@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/manikandants/bot/issues"
+  },
+  "homepage": "https://github.com/manikandants/bot#readme",
+  "dependencies": {
+    "async": "^2.4.1",
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "mongoose": "^4.10.7"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-jshint": "^2.0.4",
+    "gulp-nodemon": "^2.2.1",
+    "jshint": "^2.9.5"
+  }
+}
