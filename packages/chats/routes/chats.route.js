@@ -5,7 +5,10 @@ const chats = require('../controllers/chats.controller');
 module.exports = (app) => {
 
   app.route('/api/chat')
+    //Uncomment this for mongodb version
     //.post(chats.chat)
+
+    //Elasticsearch version
     .post(chats.elasticChat)
     .get(chats.history);
 
