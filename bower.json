@@ -1,0 +1,22 @@
+{
+  "name": "bot",
+  "description": "",
+  "main": "app.js",
+  "authors": [
+    "Manikandan TS <manikandan.citeee@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/manikandants/bot",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-ui-router": "^1.0.4",
+    "angular": "^1.6.4",
+    "bootstrap": "^3.3.7"
+  }
+}

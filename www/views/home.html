@@ -1,0 +1,23 @@
+<div class="row" ng-repeat="message in messages">
+  <hr>
+  <div class="col-md-12 green" ng-if="message.user=== 'me'">
+      {{message.question}}
+  </div>
+  <div ng-if="message.user=== 'bot'">
+      <div class="col-md-2 pull-right red" ng-repeat="resp in message.response">
+        {{resp.answer}}
+      </div>
+  </div>
+</div>
+<div class="footer navbar-fixed-bottom">
+  <div class="row">
+    <div class="form-group">
+      <div class="col-md-11">
+        <input type="text" class="form-control" placeholder="Enter a question" ng-model="message" enter-key="chat()">
+      </div>
+      <div class="col-md-1">
+        <button ng-click="chat()">Send</button>
+      </div>
+    </div>
+  </div>
+</div>
