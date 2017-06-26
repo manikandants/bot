@@ -5,7 +5,8 @@ const chats = require('../controllers/chats.controller');
 module.exports = (app) => {
 
   app.route('/api/chat')
-    .post(chats.chat)
+    //.post(chats.chat)
+    .post(chats.elasticChat)
     .get(chats.history);
 
   /*app.route('/api/chats')

@@ -2,6 +2,7 @@ bottrApp.controller('home', ['$scope', 'apiFactory', function($scope, apiFactory
   $scope.history = function() {
     apiFactory.getHistory().then(function(resp) {
       console.log(resp);
+      $scope.message = '';
       $scope.messages = resp.data;
     }, function(err) {
       console.log(err);
