@@ -1,6 +1,6 @@
 bottrApp.factory('apiFactory', ['$http', function($http) {
   var apiFactory = {};
-  var domainURL = 'http://localhost:3000/api';
+  var domainURL = 'http://13.126.206.7:3000/api';
   apiFactory.getHistory = function() {
     return $http.get(domainURL + '/chat');
   };
